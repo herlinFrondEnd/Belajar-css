@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>latihan css float 3</title>
+	<style type="text/css">
+		.container {
+			width: 800px;
+			border: 1px solid black;
+			margin: auto;
+			padding: 5px;
+			/*box-sizing: border-box;*/
+		}
+
+		.kiri, .tengah, .kanan {
+			height: 500px;
+			float: left;
+		}
+
+		.kiri {
+			width: 150px;
+			background-color: salmon;
+		}
+
+		.tengah {
+			width: 500px;
+			background-color: lightblue;
+		}
+
+		.kanan {
+			width: 150px;
+			background-color: limegreen;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="kiri">kiri</div>
+		<div class="tengah">tengah</div>
+		<div class="kanan">kanan</div>
+	</div>
+</body>
+</html>
