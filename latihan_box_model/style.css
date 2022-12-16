@@ -1,3 +1,20 @@
+/*clear fix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+
 body {
 	font: 16px/18px arial, sans-serif;
 	background-color: #eaeaea;
@@ -6,7 +23,7 @@ body {
 
 
 .container {
-	width: 800px;
+	width: 960px;
 	margin: auto;
 	/*border: 1px solid green;*/
 	background-color: #fff;
@@ -43,41 +60,73 @@ body {
 }
 
 .hero {
-	height: 280px;
+	height: 320px;
 	background-image: url(img/logo.jpg);
 	background-size: cover;
-	background-position: 0 -140px;
+	background-position: 0 -180px;
 	border-top: 5px solid salmon;
 	border-bottom: 5px solid lightskyblue;
 }
 
-.content {
+.main {
+	/*border: 1px solid red;*/
+	width: 600px;
 	padding: 20px;
+	box-sizing: border-box;
+	float: left;
 }
 
-.content h2 {
+.main h2 {
 	font-size: 28px;
 	font-weight: bold;
 }
 
-.content .penulis{
+.main .penulis{
 	font-size: 11px;
 }
 
-.content .penulis a {
+.main .penulis a {
 	text-decoration: none;
 	color: salmon;
 	/*padding: 5px;*/
 }
 
-.content .penulis a:hover {
+.main .penulis a:hover {
 	background-color: lightskyblue;
 	color: white;
 }
 
-.content p {
+.main p {
 	margin-bottom: 20px;
 	font-size: 14px;	
+}
+
+.sidebar {
+	width: 300px;
+	/*border: 1px solid yellow;*/
+	float: right;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.sidebar h3 {
+	font-weight: bold;
+	color: #666;
+}
+
+.sidebar img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin-right: 4px;
+}
+
+.sidebar p {
+	font: 12px/18px arial;
+}
+
+.clear {
+	clear: both;
 }
 
 .footer {
