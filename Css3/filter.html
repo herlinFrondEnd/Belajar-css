@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>filter pada css3</title>
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+
+		/* filter
+			 blur(px)
+			 brightness(angka | %)
+			 contrast(angka | %)
+			 saturate(angka | %)
+			 grayscale(angka | %)
+			 sepia(angka | %)
+			 hue-rotate(deg)
+			 invert(angka | %)
+			 opacity(angka | %)
+			 drop-shadow(sama seperti box-shadow)
+		*/
+
+		img {
+			/*filter: blur(10px);*/
+			/*filter: brightness(2);*/
+			/*filter: contrast(200%);*/
+			/*filter: saturate(0%);*/
+			/*filter: grayscale(100%);*/
+			/*filter: sepia(100%);*/
+			/*filter: hue-rotate(90deg);*/
+			/*filter: invert(10);*/
+			/*filter: opacity(0.5);*/
+			/*filter: drop-shadow(5px 5px 5px blue);*/
+
+			filter: blur(5px) invert(10);
+			transition: 1s;
+		}
+
+		img:hover {
+			filter: blur(0) invert(0);
+		}
+
+		/*h1 {
+			font-size: 100px;
+			color: white;
+			filter: drop-shadow(5px 5px 2px blue);
+		}*/
+
+
+
+
+	</style>
+</head>
+<body>
+	<img src="../img/logo.jpg" alt="image">
+	<!-- <h1>HELLO WORLD</h1> -->
+</body>
+</html>
